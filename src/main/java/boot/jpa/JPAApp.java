@@ -1,7 +1,8 @@
-package boot.jpa.controller;
+package boot.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Hello world!

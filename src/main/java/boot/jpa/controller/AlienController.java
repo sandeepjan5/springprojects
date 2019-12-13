@@ -9,6 +9,7 @@ public class AlienController
 	@RequestMapping("/")
 	public String home()
 	{
+		System.out.println("hello");
 		return "Home.jsp";
 	}
 
