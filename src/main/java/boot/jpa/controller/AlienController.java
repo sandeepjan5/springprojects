@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AlienController 
 {
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String home()
 	{
 		System.out.println("hello");
-		return "Home.jsp";
+		return "Home";
 	}
 
 }

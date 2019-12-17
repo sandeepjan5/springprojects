@@ -1,14 +1,11 @@
 package boot.jpa.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import boot.jpa.service.LoginService;
@@ -23,7 +20,7 @@ public class LoginController {
 	@RequestMapping(value="/login", method = RequestMethod.GET)
 	public String showLoginPage(ModelMap model)
 	{
-		return "login";
+		return "LoginView";
 	}
 	
 	
@@ -40,7 +37,7 @@ public class LoginController {
 		model.put("name", name);
 		model.put("password", password);
 		
-		return "welcome";
+		return "WelcomeView";
 	}
 
 }

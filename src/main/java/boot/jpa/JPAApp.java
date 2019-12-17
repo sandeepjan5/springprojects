@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  */
 @SpringBootApplication
+@ComponentScan("boot.jpa")
 public class JPAApp 
 {
     public static void main( String[] args )
