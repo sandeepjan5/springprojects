@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class ScopeExample {
 
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		
 		ConfigurableApplicationContext context = SpringApplication.run(ScopeExample.class, args);
@@ -18,6 +18,6 @@ public class ScopeExample {
 	b2.Show();
 	
 
-	}
+	}*/
 
 }
