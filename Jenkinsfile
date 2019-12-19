@@ -8,7 +8,7 @@ pipeline {
 
     // global env variables
     environment {
-        EMAIL_RECIPIENTS = 'srinivas.bsg@gmail.com'
+        EMAIL_RECIPIENTS = 'sandeep.amarnath@gmail.com'
     }
    
     stages {
@@ -150,7 +150,7 @@ pipeline {
                                sh '''
                                 cf delete 'ApplicationToDev' -f
                                 cf delete 'HelloSpringBootPCF' -f
-                                cf login -a 'api.run.pivotal.io' -u 'srinivas.bsg@gmail.com' -p 'Srini123$' -o 'sburra-pcf' -s 'development'
+                                cf login -a 'api.run.pivotal.io' -u 'sandeep.amarnath@gmail.com' -p 'Myfeb11#' -o 'sburra-pcf' -s 'development'
                                 cf push
                                  '''
                                 echo 'the application is deployed !'
