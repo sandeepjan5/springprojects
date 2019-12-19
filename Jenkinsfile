@@ -147,10 +147,8 @@ pipeline {
                                 echo "CF Login..."
                                 def dir = pwd() 
                                 echo 'dir name ......' + dir
-                               sh '''
-                                cf delete 'ApplicationToDev' -f
-                                cf delete 'HelloSpringBootPCF' -f
-                                cf login -a 'api.run.pivotal.io' -u 'sandeep.amarnath@gmail.com' -p 'Myfeb11#' -o 'sburra-pcf' -s 'development'
+                               sh '''                               
+                                cf login -a 'api.run.pivotal.io' -u 'sandeep.amarnath@gmail.com' -p 'Welcome12#' -o 'SandeepPCF' -s 'development'
                                 cf push
                                  '''
                                 echo 'the application is deployed !'
@@ -320,12 +318,12 @@ def getChangeString() {
     return changeString
 }
 
-def sendEmail(status) {
-    mail(
-            to: 'srinivas.bsg@gmail.com',
-            subject: "Build $BUILD_NUMBER - " + status + " (${currentBuild.fullDisplayName})",
-            body: "Changes:\n " + getChangeString() + "\n\n   please  Check console output at: $BUILD_URL/console" + "\n")
-}
+//def sendEmail(status) {
+    //mail(
+      //      to: 'srinivas.bsg@gmail.com',
+      //      subject: "Build $BUILD_NUMBER - " + status + " (${currentBuild.fullDisplayName})",
+      //      body: "Changes:\n " + getChangeString() + "\n\n   please  Check console output at: $BUILD_URL/console" + "\n")
+//}
 
 def getDevVersion() {
     print 'in getdevVesion...'
