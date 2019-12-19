@@ -268,16 +268,16 @@ pipeline {
         always {
             // Let's wipe out the workspace before we finish!
             deleteDir()
-            sendEmail("Deleted");
+            //sendEmail("Deleted");
         }
         success {
-            sendEmail("Successful");
+            //sendEmail("Successful");
         }
         unstable {
-            sendEmail("Unstable");
+            //sendEmail("Unstable");
         }
         failure {
-            sendEmail("Failed");
+            //sendEmail("Failed");
         }
     }
 
